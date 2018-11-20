@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include "memmgr.h"
-
 #include "config.h"
 
 int main(int argc, const char *argv[])
