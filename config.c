@@ -55,7 +55,7 @@ static int cfg_atoi(const char *str, int def_value)
                 #ifdef WIN32    
                     if(endptr != null && endptr-strings->array[i] < (int)strlen(strings->array[i]))
                 #else
-                    if(endptr != null || errno == ERANGE)
+                    if(endptr == strings->array[i] || errno == ERANGE)
                 #endif
                     {
                         value = def_value;
